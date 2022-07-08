@@ -40,11 +40,13 @@ header .list-items{
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    flex-direction: ;
 
 }
 
 .list-items li a{
     color: #fff
+
 }
 
 header .menu{
@@ -67,7 +69,7 @@ header .menu{
     margin-bottom: 10px;
 }
 
-.texto-apresentacao a{
+.btn{
     background-color: #122a57;
     color: #fff;
     text-align: center;
@@ -79,30 +81,184 @@ header .menu{
     line-height: 50px;
     margin-top: 10px ;
     margin-bottom: 10px;
-    }
+}
 
-    #quem-somos{
+#quem-somos{
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
     }
 
-    #quem-somos h2{
+
+#quem-somos h2{
         font-size: 32px;
         color: #122a57 ;
         display: flex;
         margin-bottom: 20px;
-    }
-    #quem-somos h2::before{
+}
+
+#quem-somos h2::before{
         content: "" ;
         height: 40px;
         width: 3px;
         margin-right: 5px;
         background-color: #122a57;
         position: relative;
-    }
+}
 
-    #quem-somos p{
+#quem-somos p{
     margin-bottom: 10px;
     width: 90%;
+}
+
+#quem-somos img{
+    min-width: 420px;
+}
+
+.container-externo{
+    background-color: #122a57;
+    width: 100%;
+}
+
+#servicos{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#servicos h2{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 40px;
+ }
+
+.list-service{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-service .item-service{
+ text-align: center;
+ }
+
+.item-service a{
+    width: 220px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 50px;
+    padding: 5px 10px;
+    color: #122a57;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.item-service p {
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}
+
+.item-service img{
+    width: 80%;
+    margin: auto;
+}
+
+#planos{
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#planos h2{
+    font-size: 32px;
+    padding-top: 50px;
+}
+
+
+.list-planos{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.item-plano{
+    flex: 1;
+    border: 5px solid #122a57;
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 240px;
+}
+
+.item-plano .btn{
+margin: auto;
+margin-bottom: 20px;
+}
+
+.item-plano h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.item-plano h3::after{
+    content: "";
+    background-color: #122a57;
+    width: 100%;
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.item-plano ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.item-plano ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.item-plano ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #122a57;
+    margin-right: 5px;
+} 
+
+footer{
+    background-color: #122a57;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+
+footer .footer{
+    justify-content: space-between;
+    color:#ffff ;
+}
+/* mobile */ 
+@media(max-width: 992px){
+    .flex-container:{
+        flex-direction: column;
+
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao .texto-apresentacao{
+        width: 100%;
+    }
 }
